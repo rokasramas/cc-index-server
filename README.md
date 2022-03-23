@@ -25,10 +25,8 @@ To run, simply run `cdx-server` to start up the index server, or optionally `way
 If you have docker installed in your system, you can run index server with docker itself.
 
 ```
-git clone https://github.com/commoncrawl/cc-index-server.git
-cd cc-index-server
 docker build . -t cc-index
-docker run --rm --publish 8080:8080 -ti cc-index
+docker run --rm --publish 8080:8080 -ti --mount type=bind,source="$(pwd)"/collections,destination=/opt/webapp/collections cc-index
 ```
 
 You can use `install-collections.sh` to download indexes to your system and mount it on docker.
