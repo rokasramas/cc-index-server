@@ -1,4 +1,5 @@
 pywb==0.33.2
+markupsafe==2.0.1
 boto
 gevent
 uwsgi
