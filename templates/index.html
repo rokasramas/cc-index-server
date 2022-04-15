@@ -15,7 +15,7 @@ Please see the <a href="https://pywb.readthedocs.io/en/latest/manual/cdxserver_a
 </p>
 
 <p>
-<a href="https://commoncrawl.org/the-data/">Common Crawl data</a> is stored on <a href="https://aws.amazon.com/public-datasets/common-crawl/">Amazon Web Services' Public Data Sets</a>. All data and <a href="https://commoncrawl.s3.amazonaws.com/cc-index/collections/index.html">index files</a> are free to download &mdash; run your own index server or analyze the index offline!<br/>
+<a href="https://commoncrawl.org/the-data/">Common Crawl data</a> is stored on <a href="https://aws.amazon.com/public-datasets/common-crawl/">Amazon Web Services' Public Data Sets</a>. All data and <a href="https://data.commoncrawl.org/cc-index/collections/index.html">index files</a> are free to download &mdash; run your own index server or analyze the index offline!<br/>
 Please do not overload the URL index server for bulk downloads (e.g. all records of the entire .com top-level domain), see the <a href="https://groups.google.com/d/msg/common-crawl/3QmQjFA_3y4/vTbhGqIBBQAJ">download instructions</a>. Alternatively, check the <a href="https://commoncrawl.org/2018/03/index-to-warc-files-and-urls-in-columnar-format/">columnar index</a> which allows for efficient aggregations and filtering on any field/column.<br/>
 More information about this URL index is found in our <a href="https://commoncrawl.org/2015/04/announcing-the-common-crawl-index/">announcement of the Common Crawl index</a>. For help and support, please visit the <a href="https://groups.google.com/forum/#!forum/common-crawl">Common Crawl user forum</a>.
 </p>
@@ -45,7 +45,7 @@ Currently available index collections (also as <a href="/collinfo.json">JSON lis
       {% endif %}
     </td>
     <td>/{{ route.path }}-index</td>
-    <td><a href="https://commoncrawl.s3.amazonaws.com/crawl-data/{{route.path}}/cc-index.paths.gz">{{route.path}}/cc-index.paths.gz</td></td>
+    <td><a href="https://data.commoncrawl.org/crawl-data/{{route.path}}/cc-index.paths.gz">{{route.path}}/cc-index.paths.gz</td></td>
   </tr>
   {% endif %}
 {% endfor %}
