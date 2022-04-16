@@ -4,7 +4,7 @@ if [ ! -d "collections" ]; then
     mkdir collections
 fi
 
-aws --no-sign-request s3 sync s3://commoncrawl/cc-index/collections/ collections/ --exclude "*" --include "*/cluster.idx" --include "*/metadata.yaml"
+aws s3 sync s3://commoncrawl/cc-index/collections/ collections/ --exclude "*" --include "*/cluster.idx" --include "*/metadata.yaml"
 
 if [ $? -ne 0 ]; then
     echo "Error installing collections"
